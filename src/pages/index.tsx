@@ -17,7 +17,6 @@ export default function Home() {
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
-            ad='test'
           >
             By{" "}
             <Image
