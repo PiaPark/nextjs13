@@ -39,7 +39,7 @@ export default function Home() {
           width={180}
           height={37}
           priority
-          test="zzz"
+          test1="zzz"
         />
       </div>
 
