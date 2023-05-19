@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "ls": "lint-staged"
+    "ls": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.2.1",
@@ -28,7 +29,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "typescript": "^5.0.4"
