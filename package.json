@@ -35,7 +35,7 @@
     "typescript": "^5.0.4"
   },
   "lint-staged": {
-    "./src/**/*.{js,jsx,ts,tsx}": ["npm run lint"]
+    "./src/**/*.{js,jsx,ts,tsx}": ["eslint --fix"]
   },
   "husky":{
     "hooks": {
