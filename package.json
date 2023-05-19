@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint --quiet --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
@@ -37,7 +37,7 @@
   "lint-staged": {
     "*.{ts,tsx,jsx,js}": [
       "prettier --write",
-      "npm run lint-staged"
+      "npm run lint"
     ]
   }
 }
