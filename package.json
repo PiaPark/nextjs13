@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ls": "lint-staged"
   },
   "dependencies": {
     "@types/node": "20.2.1",
@@ -28,11 +29,9 @@
     "prettier": "^2.8.8"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "eslint --ext .tsx,ts src/ --fix"
-    ],
-    "src/**": [
-      "prettier --check 'src/**/*.ts' 'src/**/*.tsx'"
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
     ]
   },
   "husky": {
