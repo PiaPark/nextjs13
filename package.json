@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-staged": "lint-staged",
+    "ls": "lint-staged",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -34,12 +34,15 @@
     "prettier": "^2.8.8",
     "typescript": "^5.0.4"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run ls"
+    }
+  },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "eslint --ext .tsx --ext .ts ./src --fix"
-    ],
-    "./src/**": [
-      "prettier --write ."
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
     ]
   }
 }
