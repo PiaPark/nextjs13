@@ -22,7 +22,9 @@
     "sourceType": "module"
   },
   "plugins": ["react", "react-hooks", "prettier"],
-  "rules": {}, // 베이스로 세팅한 extends들에서 예외적으로 처리하기 위함
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }, // 베이스로 세팅한 extends들에서 예외적으로 처리하기 위함
   "settings": {
     "react": {
       "version": "detect"
